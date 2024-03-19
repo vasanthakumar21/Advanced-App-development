@@ -30,14 +30,7 @@ function App() {
         <Route path='loginas' element={<Loginas/>}/>
       
       </Routes>
-    </Router>
-      {/* <Navbar /> */}
-      {/*</LoginForm>*/}
-      {/*<UserLogin> */}
-      {/* </SignupForm> */}
-     
-
-      
+    </Router>   
       </>
 
   );

@@ -6,14 +6,11 @@ import Navbar from './Navbar';
 import Sidebar from './SideBar';
 import Footer from './Footer';
 
-
-
 function AdminDash() {
     const data = [
         { name: 'Total Boats', total: 300, booked: 120}
     ];
-    
-
+ 
     return (
         <>
         <Navbar> </Navbar>
