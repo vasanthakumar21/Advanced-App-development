@@ -1,0 +1,131 @@
+@gray-darker: #444444;
+@gray-dark: #696969;
+@gray: #999999;
+@gray-light: #cccccc;
+@gray-lighter: #ececec;
+@gray-lightest: lighten(@gray-lighter,4%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+
+.btn {
+  background-color: white;
+  border: 1px solid;
+  border-radius: 1rem;
+  color: gray;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  /* margin: 0; */
+  padding: 0px 200px 0px 500px;
+  /* /* padding: 0; */
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  /* width: 200px; */
+  @media (min-width: 40rem) {
+    width: 30%;
+  }
+  @media (min-width: 56rem) {
+    width: 30.3333%;
+  }
+}
+
+.card {
+  background-color: rgb(239, 238, 238);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &:hover {
+    .card__image {
+      filter: contrast(100%);
+    }
+  }
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  filter: saturate(180%);
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+  @media (min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%;
+    }
+  }
+}
+
+.card__image--flowers {
+  background-image: url("src/assets/frp-speed-boat-500x500.jpg");
+}
+
+.card__image--river {
+  background-image: url("src/assets/download.jpeg");
+}
+
+.card__image--record {
+  background-image: url("src/assets/1d34eed9076a8420ba97b6693da05741.jpg");
+}
+
+.card__image--fence {
+  background-image: url("src/assets/cc08803d225f1cf04a587301ab71e436.jpg");
+}
+
+.card__title {
+  color: gray;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+.btt{
+  border-radius: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.btt:hover{
+  cursor: pointer;
+  background-color: darkblue;
+}

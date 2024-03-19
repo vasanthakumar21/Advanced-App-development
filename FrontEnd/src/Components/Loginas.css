@@ -1,0 +1,49 @@
+.full
+{
+    width: 420px;
+    height: 300PX;
+    background: transparent;
+    border:2px solid rgba(255, 255, 255, .2);
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 , .2);
+    color: #0b0404;
+    border-radius: 10px;
+    padding: 50px 40px;
+    margin-top: 350px;
+    margin-left: 733px;
+
+
+}
+.btnu :hover
+{
+    cursor: pointer;
+}
+.btnu{
+width: 100%;
+height: 45px;
+border-radius: 40px;
+border: none;
+outline: none;
+background: #fff;
+box-shadow: 0 0 10px rgba(0 , 0 , 0 , .1);
+cursor: pointer;
+font-size: 16px;
+color: #333;
+font-weight: 600;
+margin-bottom: 20PX;
+}
+.dub
+{
+    display: flex;
+
+    min-height: 100vh;
+    background-image: url("src/assets/pexels-godson-bright-962464.jpg");
+     background-size: cover; 
+    background-position: center;
+}
+.VV
+{
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
